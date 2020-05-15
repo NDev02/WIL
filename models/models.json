@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "name": "The Office US (all seasons)",
+        "path": "./models/all_office"
+    },{
+        "name": "The Office US (first four seasons)",
+        "path": "./models/first_four"
+    },{
+        "name": "The Office US (diversity day episode)",
+        "path": "./models/diversity_day"
+    },{
+        "name": "The Great Gatsby",
+        "path": "./models/gatsby"
+    },{
+        "name": "Shakespeare",
+        "path": "./models/play_sample"
+    }
+]

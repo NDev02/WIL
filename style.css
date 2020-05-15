@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.typed {
+    font-family: 'Special Elite', cursive;
+}
+
+.readable {
+    font-family: 'Roboto', sans-serif;
+}
+
+.vertical-center {
+    align-self: center;
+}
+
+.horizontal-center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+    padding: 1em;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    --radius: 0.8em;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr 3em;
+    overflow: hidden;
+}
+
+body :first-child {
+    margin: 0;
+}
+
+.top, .mid, .end {
+    padding: 1em;
+}
+
+.top {
+    display: grid;
+    background: #003388;
+    color: white;
+}
+
+.mid {
+    background: #eeeeee;
+    overflow: auto;
+}
+
+.end {
+    background: #333333;
+    color: white;
+}
+
+.form, #output-text {
+    margin: 1em;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: var(--radius);
+}
+
+.input-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    min-height: 3em;
+    padding: 0.4em;
+}
+
+.input-section input, .input-section select, button {
+    height: 2em;
+    background: #eeeeee;
+    border: none;
+    padding: 1em;
+    border-radius: var(--radius);
+    outline: none;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.input-section input:hover, .input-section select:hover, button:hover {
+    border: 2px solid #c77100;
+    cursor: pointer;
+}
+
+.input-section input:focus, .input-section select:focus, button:active {
+    border: 2px solid #003388;
+}
+
+.input-section select, button {
+    height: 4em;
+}
+
+#output-text {
+    font-family: 'Special Elite', cursive;
+}
+
+@media(max-width: 760px) {
+
+    .input-section {
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: unset;
+
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .mid {
+        padding: 0.15em;
+    }
+
+}

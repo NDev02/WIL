@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>wil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <div class="top">
+      <h1 class="vertical-center">WIL</h1>
+    </div>
+    <div class="mid">
+      <p class="text-center">Using ML5, with Tensorflow.js at its core, we created a teachable machine that is able to generate entire chunks of text based on a few parameters.</p>
+      <div class="form">
+        <div class="input-section"><label>Model</label><select id="model" placeholder="Select Model"></select></div>
+        <div class="input-section"><label>Generations</label><input id="gen-cou" type="number" value="20"/></div>
+        <div class="input-section"><label>Generation length</label><input id="gen-len" type="number" value="5"/></div>
+        <div class="input-section"><label>Seed length</label><input id="see-len" type="number" value="10"/></div>
+        <div class="input-section"><label>Starting story</label><input id="sta-sto" type="text" value="once upon a time..."/></div>
+        <div class="input-section"><label></label><button onclick="runModel()">Run</button></div>
+      </div>
+      <div class="output">
+        <p id="output-text" hidden></p>
+      </div>
+    </div>
+    <div class="end">
+      <p class="vertical-center">©2020-2021 Nathan Gordon</p>
+    </div>
+  </body>
+</html>

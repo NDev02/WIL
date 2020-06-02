@@ -49,7 +49,6 @@ async function runModel() {
             rnn = model;
             story = document.querySelector("#sta-sto").value;
             await createStory(generationCount, generationLength, seedLength);
-            alert("Done.");
 
         }
 
@@ -88,5 +87,6 @@ async function createStory(generations, length, sampleSize, verbose) {
     }
 
     story = story.replace(/  /g, " ");
+    alert("Done.");
 
 }

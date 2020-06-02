@@ -78,7 +78,7 @@ body :first-child {
     padding: 0.4em;
 }
 
-.input-section input, .input-section select, button {
+.input-section input, .input-section select, button, textarea {
     height: 2em;
     background: #eeeeee;
     border: none;

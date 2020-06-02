@@ -6,7 +6,7 @@
   "embedding": {
     "filename": "embedding",
     "shape": [
-      81,
+      75,
       128
     ]
   },
@@ -39,14 +39,14 @@
   "rnnlm/softmax_b": {
     "filename": "rnnlm_softmax_b",
     "shape": [
-      81
+      75
     ]
   },
   "rnnlm/softmax_w": {
     "filename": "rnnlm_softmax_w",
     "shape": [
       128,
-      81
+      75
     ]
   }
 }

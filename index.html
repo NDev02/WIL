@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166942370-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-166942370-1');
-    </script>
     <title>wil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -28,13 +19,13 @@
       <h1 class="vertical-center">WIL</h1>
     </div>
     <div class="mid">
-      <p class="text-center">Using ML5, with Tensorflow.js at its core, we created a teachable machine that is able to generate entire chunks of text based on a few parameters.</p>
+      <p class="text-center">Using ML5, with Tensorflow.js at its core, we created a teachable machine that is able to generate entire chunks of text based on a few parameters. We also chose to use varying amounts of training data for The Office US models to illustrate how the amount of data trained on impacts accuracy.</p>
       <div class="form">
         <div class="input-section"><label>Model</label><select id="model" placeholder="Select Model"></select></div>
         <div class="input-section"><label>Generations</label><input id="gen-cou" type="number" value="20"/></div>
         <div class="input-section"><label>Generation length</label><input id="gen-len" type="number" value="5"/></div>
         <div class="input-section"><label>Seed length</label><input id="see-len" type="number" value="10"/></div>
-        <div class="input-section"><label>Starting story</label><input id="sta-sto" type="text" value="once upon a time..."/></div>
+        <div class="input-section"><label>Starting story</label><textarea id="sta-sto" type="text">once upon a time...</textarea></div>
         <div class="input-section"><label></label><button onclick="runModel()">Run</button></div>
       </div>
       <div class="output">

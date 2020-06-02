@@ -6,7 +6,7 @@
         "name": "The Office US (first four seasons)",
         "path": "./models/first_four"
     },{
-        "name": "The Office US (diversity day episode)",
+        "name": "The Office US (only one episode)",
         "path": "./models/diversity_day"
     },{
         "name": "The Great Gatsby",
@@ -14,5 +14,8 @@
     },{
         "name": "Shakespeare",
         "path": "./models/play_sample"
+    },{
+        "name": "Coding Train",
+        "path": "./models/coding_train"
     }
 ]
